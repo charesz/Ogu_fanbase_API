@@ -1,0 +1,20 @@
+from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
+
+from ..database import SessionLocal
+from .. import crud, schemas
+
+router = APIRouter(prefix="/items", tags=["Items"])
+
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@router.get("/", response_model=list[schemas.Item])
+def get_items(db: Session = Depends(get_db)):
+    return crud.get_items(db)
