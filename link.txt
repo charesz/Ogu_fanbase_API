@@ -1,0 +1,25 @@
+Ogu and the Secret Forest API
+
+A simple RESTful API built with FastAPI that provides structured information about characters, lore, collectibles, and other elements from Ogu and the Secret Forest.
+
+LINKS
+Render: 
+https://ogu-fanbase-api.onrender.com
+
+Characters:
+https://ogu-fanbase-api.onrender.com/characters
+
+Divine Beasts:
+https://ogu-fanbase-api.onrender.com/divine-beasts
+
+NPCs:
+https://ogu-fanbase-api.onrender.com/npcs
+
+Items:
+https://ogu-fanbase-api.onrender.com/items
+
+Companions:
+https://ogu-fanbase-api.onrender.com/companions
+
+Collectibes 
+https://ogu-fanbase-api.onrender.com/collectibles?type=air_bug&region=Jungle Region
